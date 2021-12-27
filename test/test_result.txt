@@ -1,0 +1,24 @@
+EMPTY REQUEST
+{"status":"ERROR","message":"Empty request"}
+
+REQUEST WITH SINGLE UNKNOWN TAG
+{
+   "chunks" : "_\n",
+   "status" : "OK",
+   "message" : "msd [_] is not in mapping !\n"
+}
+
+REQUEST WITH MULTIPLE TAGS AND FINAL UNKNOWN TAG
+{
+   "status" : "OK",
+   "message" : "msd [NNN] is not in mapping !\n",
+   "chunks" : "Vp#1\nNp#1\nNp#1\nNp#1\n_\n"
+}
+
+REQUEST WITH MULTIPLE CORRECT TAGS
+{
+   "message" : "",
+   "status" : "OK",
+   "chunks" : "Vp#1\nNp#1\nNp#1\nNp#1\n"
+}
+
